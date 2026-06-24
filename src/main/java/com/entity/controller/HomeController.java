@@ -9,12 +9,12 @@ public class HomeController {
 
     @GetMapping("/")
     public String root() {
-        return "home";
+        return "redirect:/auth/login";
     }
 
     @GetMapping("/home")
     public String home() {
-        return "home";
+        return "redirect:/auth/login";
     }
 
     @GetMapping("/test")
